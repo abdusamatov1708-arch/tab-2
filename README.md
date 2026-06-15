@@ -1,18 +1,29 @@
 # tab-2
 
+# ==============================================================================
+# DASTUR TAVSIFI:
+# Ushbu dastur foydalanuvchining shaxsiy ma'lumotlarini (ismi, yoshi, kasbi, 
+# qiziqishlari va hayotiy maqsadlari) konsolga chiroyli formatda chiqaradi.
+# Dasturda kamida 6 ta print(), maxsus bezaklar hamda sep/end parametrlari ishlatilgan.
+# ==============================================================================
 
+# 1-chaqiruv: Dastur sarlavhasi (Asosiy bezak)
 print("=" * 60)
-print("FAYLNI XAVFSIZ O'QISH BOSQICHLARI")
+print("FOYDALANUVCHI HAQIDA MA'LUMOTLAR")
 print("=" * 60)
 
-print("1. VALIDATION", "-" * 10, "Fayl borligi va ruxsatlar tekshiriladi.", sep=" ")
+# 2-chaqiruv: Ism va Yosh (sep= parametri bilan ajratilgan)
+print("Foydalanuvchi:", "Ali Valiyev", "| Yoshi:", "20 da", sep="   ")
 
-print("2. READ-ONLY", "-" * 11, "Fayl faqat o'qish rejimida ochiladi.", sep=" ")
+# 3-chaqiruv: Kasbi (maxsus minus belgisi bilan bezatilgan)
+print("-" * 25, "Kasbi: Dasturchi va Tahlilchi", "-" * 25)
 
-print("3. TRY-CATCH", "-" * 11, "Kutilmagan xatoliklar bloklar ichiga olinadi.", sep=" ")
+# 4-chaqiruv: Qiziqishlar (Matn oxiriga yangi qator o'rniga maxsus belgi qo'yiladi)
+print("Qiziqishlari: Kompyuter o'yinlari, matematika va fizika masalalari. ", end="--> ")
 
-print("4. SAFE READING", "-" * 8, "Katta fayllar bo'laklab (buffer) o'qiladi. ", end="")
-print("*(RAM to'lib qolmasligi uchun)*")
+# 5-chaqiruv: Qiziqishlarning davomi (end= tufayli shu qatordan davom etadi)
+print("Shuningdek, kompyuter jihozlarini modernizatsiya qilish.")
 
-print("5. CLOSE STREAM", "-" * 8, "Resurslar majburiy ravishda yopiladi.", sep=" ")
+# 6-chaqiruv: Hayotiy maqsad va yakuniy bezak
+print("Hayotiy maqsad: Kuchli mutaxassis bo'lish va yirik loyihalarni yaratish.")
 print("*" * 60)
